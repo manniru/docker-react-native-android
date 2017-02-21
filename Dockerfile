@@ -16,5 +16,5 @@ RUN echo y | android update sdk --no-ui --all --filter android-23 | grep 'packag
 RUN echo y | android update sdk --no-ui --all --filter build-tools-23.0.1 | grep 'package installed'
 RUN echo y | android update sdk --no-ui --all --filter extra-android-m2repository | grep 'package installed'
 
-RUN npm install install -g react@15.4.2 react-native@0.41.2
+RUN npm install install react@15.4.2 react-native@0.41.2 react-native-cli
 
