@@ -6,6 +6,7 @@ MAINTAINER Matthias Lohr <matthias@lohr.me>
 ENV ANDROID_HOME /opt/android-sdk
 
 RUN apt-get update && apt-get install -y lib32stdc++6 lib32z1 npm openjdk-8-jdk unzip wget
+RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN wget -q https://dl.google.com/android/repository/tools_r25.2.3-linux.zip -O /tmp/android-sdk.zip
 RUN unzip /tmp/android-sdk.zip -d ${ANDROID_HOME} && rm /tmp/android-sdk.zip
 
